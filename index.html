@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey</title>
+	<link rel="stylesheet" href="src/css/index.css">
+</head>
+<body>
+	<form action:"http://localhost:3000" method="post">
+		<fieldset>
+			<legend>About You</legend>
+			<strong>First Name:</strong>
+			<input type:"text" name="firstname">
+			<strong>Last Name:</strong>
+			<input type:"text" name="lastname"><br>
+			<strong>Age:</strong>
+			<select>
+				<option name "017" value="1a">0-17</option>
+				<option name "1834" value="2a">18-34</option>
+				<option name ">34" value="3a">>34</option>
+			</select>
+			<strong>Ethnicity:</strong>
+			<select>
+				<option name="Caucasion" value="1b">Caucasion</option>
+				<option name="Hispanic" value="2b">Hispanic</option>
+				<option name="AfricanAmerican" value="3b">African-American</option>
+				<option name="Other" value="4b">Other</option>
+				<option name="Dontanswer" value="5b">Don't Answer</option>
+			</select>
+			<strong>Gender:</strong>
+				<input type="radio" name="gender" value="male">Male
+				<input type="radio" name="gender" value="female">Female
+				<input type="radio" name="gender" value="other">Other
+				<input type="radio" name="gender" value="dontanswer">Don't Answer
+		</fieldset>
+		<fieldset>
+			<legend>Location</legend>
+			<strong>Address:</strong>
+			<input type:"text" name="address">
+			<strong>Address Line 2:</strong>
+			<input type="text" name="address2"><br>
+			<strong>City:</strong>
+			<input type;"text" name="city">
+			<strong>Zip Code:</strong>
+			<input type;"text" name="zipcode">
+			<strong>State:</strong>
+			<select>
+				<option name="Alabama" value="0">Alabama</option>
+				<option name="Florida" value="1">Florida</option>
+				<option name="Georgia" value="2">Georgia</option>
+				<option name="NorthCarolina" value="3">North Carolina</option>
+				<option name="SouthCarolina" value="4">South Carolina</option>
+				<option name="Tennessee" value="5">Tennessee</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend>Survey Responses</legend>
+			<ol id="survey">
+			 	<li><strong>In the last 12 months, how many films have you seen in theatres?</strong><br>
+					<input type="radio" name=
+					"nofilms" value="1">0-5
+					<input type="radio" name="nofilms" value="2">6-10
+					<input type="radio" name="nofilms" value="3">>10
+				</li>
+				<li><strong>In the last 12 months, what genres of movies have you seen in theatres? (Select all that Apply)</strong><br>
+					<input type="checkbox" name="genres1" value="1">Sci-Fi
+					<input type="checkbox" name="genres1" value="2">Comedy
+					<input type="checkbox" name="genres1" value="3">Thriller
+					<input type="checkbox" name="genres1" value="4">Musical
+					<input type="checkbox" name="genres1" value="5">Animated
+					<input type="checkbox" name="genres1" value="6">Horror
+					<input type="checkbox" name="genres1" value="7">Family
+					<input type="checkbox" name="genres1" value="8">Documentary
+				</li>
+				<li><strong>If you like watching movies in the theatre, how likely are you to buy the dvd/blue-ray later?</strong><br>
+					<input type="radio" name="buylater" value="1">Very Likely
+					<input type="radio" name="buylater" value="2">Somewhat Likely
+					<input type="radio" name="buylater" value="3">Not Very Likely
+					<input type="radio" name="buylater" value="4">Not Likely At All
+				</li>
+				<li><strong>Which of the following aspects do you consider most important to a good movie?</strong><br>
+					<input type="radio" name="aspects" value="1">Casting
+					<input type="radio" name="aspects" value="2">Writing
+					<input type="radio" name="aspects" value="3">Special FX
+					<input type="radio" name="aspects" value="4">Directing
+				</li>
+				<li><strong>How likely are you to watch a movie during it's opening weekend?</strong><br>
+					<input type="radio" name="opening" value="1">Very Likely
+					<input type="radio" name="opening" value="2">Somewhat Likely
+					<input type="radio" name="opening" value="3">Not Very Likely
+					<input type="radio" name="opening" value="4">Not likely At All
+				</li>
+				<li><strong>In the last 12 months, what is the best movie you've seen in theatres?</strong><br>
+					<input type="text" name="bestmovie">
+				</li>
+				<li><strong>Briefly describe why you found the movie enjoyable.</strong><br>
+					<input type="text-box" name="describe">
+				</li>
+				<li><strong>How likely are you to see a movie in theatres a second time?</strong><br>
+					<input type="radio" name="twice" value="1">Very Likely
+					<input type="radio" name="twice" value="2">Somewhat Likely
+					<input type="radio" name="twice" value="3">Not Very Likely
+					<input type="radio" name="twice" value="4">Not Likely At All
+				</li>
+			</ol>
+		</fieldset>
+	<input type="submit" value="submit">
+</body>
+</html>

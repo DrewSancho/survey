@@ -1,0 +1,30 @@
+legend {
+	color: red;
+	padding: 12.5px;
+	font-size: 4em;
+}
+legend input {
+	font-size: 1.5em;
+}
+input {
+	font-size: 1.25em;
+	padding: 5px;
+	font-family: comic;
+}
+#survey > li {
+	padding: 25px;
+	font-size: 1.55em;
+}
+select {
+	font-size: 1.5em;
+	background-color: white;
+	color: gray;
+	font-family: impact;
+}
+fieldset {
+	vertical-align: middle;
+	margin: 12.5%;
+}
+ol {
+	list-style-type: lower-roman;
+}
