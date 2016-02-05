@@ -9,18 +9,18 @@
 		<form action="http://localhost:3000" method="post">
 			<fieldset>
 			<legend>About You</legend>
-			<strong>First Name:</strong>
-			<input type="text" name="firstname">
-			<strong>Last Name:</strong>
-			<input type="text" name="lastname">
-			<strong>Age:</strong>
-			<select name="agerange">
+			<label for="First Name"><strong>First Name:</strong></label>
+			<input id="First Name" type="text" name="firstname">
+			<label for="Last Name"><strong>Last Name:</strong></label>
+			<input id="Last Name" type="text" name="lastname">
+			<label for="Age"><strong>Age:</strong></label>
+			<select id="Age" name="agerange">
 				<option value="1a">0-17</option>
 				<option value="2a">18-34</option>
 				<option value="3a">>34</option>
 			</select>
-			<strong>Ethnicity:</strong>
-			<select name="ethnicity">
+			<label for="Ethnicity"><strong>Ethnicity:</strong></label>
+			<select id="Ethnicity" name="ethnicity">
 				<option name="Caucasion" value="1b">Caucasion</option>
 				<option name="Hispanic" value="2b">Hispanic</option>
 				<option name="AfricanAmerican" value="3b">African-American</option>
@@ -28,26 +28,30 @@
 				<option name="Dontanswer" value="5b">Don't Answer</option>
 			</select>
 			<strong>Gender:</strong>
-				<input type="radio" name="gender" value="male">Male
-				<input type="radio" name="gender" value="female">Female
-				<input type="radio" name="gender" value="other">Other
-				<input type="radio" name="gender" value="dontanswer">Don't Answer
+			<label for="Male">Male</label>
+				<input id="Male" type="radio" name="gender" value="male">
+			<label for="Female">Female</label>
+				<input id="Female"class="Gender" type="radio" name="gender" value="female">
+			<label for="Other">Other</label>
+				<input id="Other" class="Gender" type="radio" name="gender" value="other">
+			<label for="DontAnswer">Don't Answer</label>	
+				<input id="DontAnswer" class="Gender" type="radio" name="gender" value="dontanswer">
 			</fieldset>
 			<fieldset>
 				<legend>Location</legend>
 				<div>
-					<strong>Address:</strong>
-					<input type="text" name="address">
-					<strong>Address Line 2:</strong>
-					<input type="text" name="address2">
+					<label for="address"> <strong>Address:</strong></label>
+					<input id="address" type="text" name="address">
+					<label for="address2"> <strong>Address Line 2:</strong></label>
+					<input id="address2"type="text" name="address2">
 				</div>
 				<div>
-					<strong>City:</strong>
-					<input type="text" name="city">
-					<strong>Zip Code:</strong>
-					<input type="text" name="zipcode">
-					<strong>State:</strong>
-					<select>
+					<label for="city"><strong>City:</strong></label>
+					<input id="city"type="text" name="city">
+					<label for="zipcode"><strong>Zip Code:</strong></label>
+					<input id="zipcode" type="text" name="zipcode">
+					<label for="state"><strong>State:</strong></label>
+					<select id="state" name="states">
 						<option name="Alabama" value="0">Alabama</option>
 						<option name="Florida" value="1">Florida</option>
 						<option name="Georgia" value="2">Georgia</option>
@@ -62,50 +66,81 @@
 				<ol id="survey">
 				 	<li>
 				 		<strong class="block">In the last 12 months, how many films have you seen in theatres?</strong>
-						<input type="radio" name=
-						"nofilms" value="1">0-5
-						<input type="radio" name="nofilms" value="2">6-10
-						<input type="radio" name="nofilms" value="3">>10
+						<label for="0to5">0-5</label>
+						<input id="0to5" type="radio" name="nofilms" value="1">
+						<label for="6-10">6-10</label>
+						<input id="6-10" type="radio" name="nofilms" value="2">
+						<label for=">10">>10</label>
+						<input id=">10" type="radio" name="nofilms" value="3">
 					</li>
 					<li><strong class="block">In the last 12 months, what genres of movies have you seen in theatres? (Select all that Apply)</strong>
-						<input type="checkbox" name="genres1" value="1">Sci-Fi
-						<input type="checkbox" name="genres1" value="2">Comedy
-						<input type="checkbox" name="genres1" value="3">Thriller
-						<input type="checkbox" name="genres1" value="4">Musical
-						<input type="checkbox" name="genres1" value="5">Animated
-						<input type="checkbox" name="genres1" value="6">Horror
-						<input type="checkbox" name="genres1" value="7">Family
-						<input type="checkbox" name="genres1" value="8">Documentary
+						<label for="scifi">Sci-Fi</label>
+						<input id="scifi"type="checkbox" name="genres1" value="1">
+						<label for="comedy">Comedy</label>
+						<input id="comedy" type="checkbox" name="genres1" value="2">
+						<label for="thrill">Thriller</label>
+						<input id="thrill" type="checkbox" name="genres1" value="3">
+						<label for="music">Musical</label>
+						<input id="music" type="checkbox" name="genres1" value="4">
+						<label for="anime">Animated</label>
+						<input id="anime" type="checkbox" name="genres1" value="5">
+						<label for="horror">Horror</label>
+						<input id="horror" type="checkbox" name="genres1" value="6">
+						<label for="fam">Family</label>
+						<input id="fam" type="checkbox" name="genres1" value="7">
+						<label for="doc">Documentary</label>
+						<input id="doc" type="checkbox" name="genres1" value="8">
 					</li>
 					<li><strong class="block">If you like watching movies in the theatre, how likely are you to buy the dvd/blue-ray later?</strong>
-						<input type="radio" name="buylater" value="1">Very Likely
-						<input type="radio" name="buylater" value="2">Somewhat Likely
-						<input type="radio" name="buylater" value="3">Not Very Likely
-						<input type="radio" name="buylater" value="4">Not Likely At All
+						<label for="vl">Very Likely</label>
+						<input id="vl" type="radio" name="buylater" value="1">
+						<label for="sl">Somewhat Likely</label>
+						<input id="sl" type="radio" name="buylater" value="2">
+						<label for="nvl">Not Very Likely</label>
+						<input id="nvl" type="radio" name="buylater" value="3">
+						<label for="nlaa">Not Likely At All</label>
+						<input id="nlaa" type="radio" name="buylater" value="4">
 					</li>
 					<li><strong class="block">Which of the following aspects do you consider most important to a good movie?</strong>
-						<input type="radio" name="aspects" value="1">Casting
-						<input type="radio" name="aspects" value="2">Writing
-						<input type="radio" name="aspects" value="3">Special FX
-						<input type="radio" name="aspects" value="4">Directing
+						<label for="cast">Casting</label>
+						<input id="cast" type="radio" name="aspects" value="1">
+						<label for="write">Writing</label>
+						<input id="write" type="radio" name="aspects" value="2">
+						<label for="sfx">Special FX</label>
+						<input id="sfx" type="radio" name="aspects" value="3">
+						<label for="dir">Directing</label>
+						<input id="dir" type="radio" name="aspects" value="4">
 					</li>
 					<li><strong class="block">How likely are you to watch a movie during it's opening weekend?</strong>
-						<input type="radio" name="opening" value="1">Very Likely
-						<input type="radio" name="opening" value="2">Somewhat Likely
-						<input type="radio" name="opening" value="3">Not Very Likely
-						<input type="radio" name="opening" value="4">Not likely At All
+						<label for="like">Very Likely</label>
+						<input id="like" type="radio" name="opening" value="1">
+						<label for="some">Somewhat Likely</label>
+						<input id="some" type="radio" name="opening" value="2">
+						<label for="not">Not Very Likely</label>
+						<input id="not" type="radio" name="opening" value="3">
+						<label for="at">Not likely At All</label>
+						<input id="at" type="radio" name="opening" value="4">
 					</li>
-					<li><strong class="block">In the last 12 months, what is the best movie you've seen in theatres?</strong>
-						<input type="text" name="bestmovie">
+					<li>
+						<label for="bm">
+						<strong class="block">In the last 12 months, what is the best movie you've seen in theatres?</strong>
+						</label>
+						<input id="bm" type="text" name="bestmovie">
 					</li>
-					<li><strong class="block">Briefly describe why you found the movie enjoyable.</strong>
-						<input type="text-box" name="describe">
+					<li>
+					<label for="issue">
+					<strong class="block">Briefly describe why you found the movie enjoyable.</strong></label>
+						<input id="issue" type="text-area" name="describe">
 					</li>
 					<li><strong class="block">How likely are you to see a movie in theatres a second time?</strong>
-						<input type="radio" name="twice" value="1">Very Likely
-						<input type="radio" name="twice" value="2">Somewhat Likely
-						<input type="radio" name="twice" value="3">Not Very Likely
-						<input type="radio" name="twice" value="4">Not Likely At All
+						<label for="vl1">Very Likely</label>
+						<input id="vl1" type="radio" name="twice" value="1">
+						<label for="sl1">Somewhat Likely</label>
+						<input id="sl1" type="radio" name="twice" value="2">
+						<label for="nvl1">Not Very Likely</label>
+						<input id="nvl1" type="radio" name="twice" value="3">
+						<label for="nlaa1">Not Likely At All</label>
+						<input type="radio" name="twice" id="nlaa1" value="4">
 					</li>
 				</ol>
 			</fieldset>
