@@ -23,8 +23,20 @@ select {
 }
 fieldset {
 	vertical-align: middle;
-	margin: 12.5%;
 }
 ol {
 	list-style-type: lower-roman;
+}
+.block {
+	display: block;
+}
+.submit {
+	font-size: 2em;
+	border-width: 2px;
+	border-color: red;
+	width: 0 auto;
+}
+#main{
+	margin: 0 auto;
+	width: 75%;
 }
